@@ -1,3 +1,21 @@
 <template>
-    <h1>Students</h1>
+    
 </template>
+
+<script>
+import data from '../api/data'
+export default {
+    data() {
+        return {
+            students : []
+        }
+    },
+    created() {
+        this.students = data.getStudents();
+    }
+}
+</script>
+
+<style>
+
+</style>
